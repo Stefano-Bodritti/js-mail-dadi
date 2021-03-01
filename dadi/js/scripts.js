@@ -5,5 +5,15 @@
 var numPc = Math.floor(Math.random() * 6 ) + 1;
 
 // 2. creo numero random per l'utente
-alert("tira il dado!");
+alert("Tira il dado!");
 var numUtente = Math.floor(Math.random() * 6 ) + 1;
+alert("Hai fatto " + numUtente);
+
+// 3. confronto i valori e stampo risultato
+if (numPc > numUtente) {
+  alert("Ho fatto " + numPc + ", quindi ho vinto io!");
+} else if (numPc < numUtente) {
+  alert("Ho fatto " + numPc + ", quindi hai vinto tu!");
+} else {
+  alert("Ho fatto " + numPc + " pure io, quindi abbiamo pareggiato!");
+}
